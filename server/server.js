@@ -29,7 +29,7 @@ app.use(express.json());
    SQLITE DATABASE
 ========================================================= */
 
-const db = new Database("./server/database.db");
+const db = new Database("./database.db");
 
 db.pragma("foreign_keys = ON");
 
