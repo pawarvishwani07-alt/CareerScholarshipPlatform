@@ -3637,11 +3637,8 @@ const answer =
    START SERVER
 ========================================================= */
 
-app.listen(
-  PORT,
-  () => {
-    console.log(
-      `Career Scholarship Platform backend running at http://localhost:${PORT}`
-    );
-  }
-);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(
+    `Career Scholarship Platform backend running on port ${PORT}`
+  );
+});
