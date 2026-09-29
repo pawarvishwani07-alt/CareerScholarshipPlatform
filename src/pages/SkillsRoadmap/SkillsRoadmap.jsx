@@ -216,7 +216,7 @@ function SkillsRoadmap() {
         }
 
         const response = await fetch(
-          `http://localhost:5000/api/roadmap-progress/${student.id}/${encodeURIComponent(
+          `http://career-scholarship-backend.onrender.com/api/roadmap-progress/${student.id}/${encodeURIComponent(
             selectedCareer
           )}`
         );
@@ -270,7 +270,7 @@ function SkillsRoadmap() {
         setLearningResource(null);
 
         const response = await fetch(
-          `http://localhost:5000/api/learning-resources/${encodeURIComponent(
+          `http://career-scholarship-backend.onrender.com/api/learning-resources/${encodeURIComponent(
             selectedCareer
           )}/${selectedStep}`
         );
@@ -332,7 +332,7 @@ function SkillsRoadmap() {
       setSavingStep(index);
 
       const response = await fetch(
-        "http://localhost:5000/api/roadmap-progress",
+        "http://career-scholarship-backend.onrender.com/api/roadmap-progress",
         {
           method: "POST",
 
@@ -465,11 +465,15 @@ function SkillsRoadmap() {
       <header className="scholarship-header">
 
         <div className="scholarship-logo">
+<div className="scholarship-logo">
            <div className="dashboard-logo">
             <img
               src="/CareerScholarshipPlatform-logo-transparent.png"
               alt="Career Scholarship Platform"
             />
+          </div>
+
+
           </div>
 
         </div>

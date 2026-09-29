@@ -28,7 +28,7 @@ function Register() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/register",
+        "http://career-scholarship-backend.onrender.com/api/register",
         {
           method: "POST",
 

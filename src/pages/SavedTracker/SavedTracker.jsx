@@ -76,7 +76,7 @@ function SavedTracker() {
         // =====================================================
 
         const careerResponse = await fetch(
-          `http://localhost:5000/api/saved-careers/${student.id}`
+          `http://career-scholarship-backend.onrender.com/api/saved-careers/${student.id}`
         );
 
         const careerData = await careerResponse.json();
@@ -100,7 +100,7 @@ function SavedTracker() {
         // =====================================================
 
         const opportunityResponse = await fetch(
-          `http://localhost:5000/api/saved-opportunities/${student.id}`
+          `http://career-scholarship-backend.onrender.com/api/saved-opportunities/${student.id}`
         );
 
         const opportunityData =
@@ -134,7 +134,7 @@ function SavedTracker() {
         // =====================================================
 
         const scholarshipResponse = await fetch(
-          `http://localhost:5000/api/saved-scholarships/${student.id}`
+          `http://career-scholarship-backend.onrender.com/api/saved-scholarships/${student.id}`
         );
 
         const scholarshipData =
@@ -192,7 +192,7 @@ function SavedTracker() {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/saved-opportunity",
+        "http://career-scholarship-backend.onrender.com/api/saved-opportunity",
         {
           method: "POST",
           headers: {
@@ -268,7 +268,7 @@ function SavedTracker() {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/saved-opportunity/${savedItem.saved_record_id}`,
+        `http://career-scholarship-backend.onrender.com/api/saved-opportunity/${savedItem.saved_record_id}`,
         {
           method: "DELETE",
         }
@@ -317,7 +317,7 @@ function SavedTracker() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/saved-career/${savedCareerId}`,
+        `http://career-scholarship-backend.onrender.com/api/saved-career/${savedCareerId}`,
         {
           method: "DELETE",
         }
@@ -364,7 +364,7 @@ function SavedTracker() {
   ) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/saved-scholarship/${savedScholarshipId}`,
+        `http://career-scholarship-backend.onrender.com/api/saved-scholarship/${savedScholarshipId}`,
         {
           method: "DELETE",
         }

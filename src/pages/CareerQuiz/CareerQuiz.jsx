@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./CareerQuiz.css";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://career-scholarship-backend.onrender.com";
 
 const questions = [
   {
