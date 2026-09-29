@@ -6,7 +6,7 @@ import "./ScholarshipMatcher.css";
    API
 ========================================================= */
 
-const API_URL = "http://career-scholarship-backend.onrender.com";
+const API_URL = "https://career-scholarship-backend.onrender.com";
 
 /* =========================================================
    OFFICIAL SCHOLARSHIP SOURCES

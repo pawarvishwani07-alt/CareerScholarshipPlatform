@@ -239,7 +239,7 @@ function Opportunities() {
         }
 
         const response = await fetch(
-          `http://career-scholarship-backend.onrender.com/api/saved-opportunities/${student.id}`
+          `https://career-scholarship-backend.onrender.com/api/saved-opportunities/${student.id}`
         );
 
         const data = await response.json();
@@ -299,7 +299,7 @@ function Opportunities() {
       }
 
       const response = await fetch(
-        "http://career-scholarship-backend.onrender.com/api/saved-opportunity",
+        "https://career-scholarship-backend.onrender.com/api/saved-opportunity",
         {
           method: "POST",
 
@@ -371,7 +371,7 @@ function Opportunities() {
       }
 
       const response = await fetch(
-        `http://career-scholarship-backend.onrender.com/api/saved-opportunities/${student.id}`
+        `https://career-scholarship-backend.onrender.com/api/saved-opportunities/${student.id}`
       );
 
       const data =
@@ -407,7 +407,7 @@ function Opportunities() {
 
       const deleteResponse =
         await fetch(
-          `http://career-scholarship-backend.onrender.com/api/saved-opportunity/${savedOpportunity.id}`,
+          `https://career-scholarship-backend.onrender.com/api/saved-opportunity/${savedOpportunity.id}`,
           {
             method: "DELETE",
           }

@@ -2801,7 +2801,7 @@ function CareerExplorer() {
     }
 
     const response = await fetch(
-      "http://career-scholarship-backend.onrender.com/api/saved-career",
+      "https://career-scholarship-backend.onrender.com/api/saved-career",
       {
         method: "POST",
         headers: {

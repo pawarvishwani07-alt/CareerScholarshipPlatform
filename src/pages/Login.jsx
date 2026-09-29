@@ -26,7 +26,7 @@ function Login() {
 
     try {
       const response = await fetch(
-        "http://career-scholarship-backend.onrender.com/api/login",
+        "https://career-scholarship-backend.onrender.com/api/login",
         {
           method: "POST",
 

@@ -216,7 +216,7 @@ function SkillsRoadmap() {
         }
 
         const response = await fetch(
-          `http://career-scholarship-backend.onrender.com/api/roadmap-progress/${student.id}/${encodeURIComponent(
+          `https://career-scholarship-backend.onrender.com/api/roadmap-progress/${student.id}/${encodeURIComponent(
             selectedCareer
           )}`
         );
@@ -270,7 +270,7 @@ function SkillsRoadmap() {
         setLearningResource(null);
 
         const response = await fetch(
-          `http://career-scholarship-backend.onrender.com/api/learning-resources/${encodeURIComponent(
+          `https://career-scholarship-backend.onrender.com/api/learning-resources/${encodeURIComponent(
             selectedCareer
           )}/${selectedStep}`
         );
@@ -332,7 +332,7 @@ function SkillsRoadmap() {
       setSavingStep(index);
 
       const response = await fetch(
-        "http://career-scholarship-backend.onrender.com/api/roadmap-progress",
+        "https://career-scholarship-backend.onrender.com/api/roadmap-progress",
         {
           method: "POST",
 
