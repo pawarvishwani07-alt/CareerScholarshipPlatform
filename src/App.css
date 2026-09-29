@@ -1,0 +1,1129 @@
+/* =========================================================
+   CAREER SCHOLARSHIP PLATFORM
+   MAIN / HOME PAGE CSS
+========================================================= */
+
+
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f5ff;
+  color: #21152f;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+
+/* =========================================================
+   HOME PAGE
+========================================================= */
+
+.home-page {
+  min-height: 100vh;
+  background: #f7f5ff;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.home-header {
+  width: 100%;
+  height: 76px;
+
+  display: grid;
+  grid-template-columns: 220px 1fr 220px;
+
+  align-items: center;
+
+  padding: 0 42px;
+
+  background: #21152f;
+
+  border-bottom: 1px solid #38204e;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.home-logo {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  width: fit-content;
+
+  line-height: 0;
+
+  text-decoration: none;
+}
+
+.home-logo img {
+  width: 180px;
+  height: 60px;
+
+  display: block;
+
+  object-fit: contain;
+  object-position: left center;
+
+  transition: transform 0.25s ease;
+}
+
+.home-logo:hover img {
+  transform: scale(1.02);
+}
+
+
+/* =========================================================
+   CENTER NAVIGATION
+========================================================= */
+
+.home-nav {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 34px;
+}
+
+.home-nav a {
+  position: relative;
+
+  color: #ddd5e5;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  padding: 8px 2px;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.home-nav a:hover {
+  color: #cda7f4;
+
+  transform: translateY(-1px);
+}
+
+.home-nav a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 2px;
+
+  background: #cda7f4;
+
+  border-radius: 10px;
+
+  transition: width 0.25s ease;
+}
+
+.home-nav a:hover::after {
+  width: 100%;
+}
+
+
+/* =========================================================
+   HEADER BUTTONS
+========================================================= */
+
+.nav-buttons {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 10px;
+}
+
+
+/* =========================================================
+   LOGIN / REGISTER
+========================================================= */
+
+.login-btn,
+.register-btn,
+.primary-btn,
+.secondary-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 40px;
+
+  padding: 0 17px;
+
+  border-radius: 10px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+/* LOGIN */
+
+.login-btn {
+  background: transparent;
+
+  color: #cda7f4;
+
+  border: 1px solid #7b3fc6;
+}
+
+.login-btn:hover {
+  background: #38204e;
+
+  border-color: #cda7f4;
+
+  color: #ffffff;
+
+  transform: translateY(-1px);
+}
+
+
+/* REGISTER */
+
+.register-btn {
+  background: #7b3fc6;
+
+  color: #ffffff;
+
+  border: 1px solid #7b3fc6;
+
+  box-shadow: 0 5px 14px rgba(123, 63, 198, 0.20);
+}
+
+.register-btn:hover {
+  background: #563083;
+
+  border-color: #563083;
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 8px 20px rgba(123, 63, 198, 0.26);
+}
+
+
+/* =========================================================
+   GENERAL PRIMARY BUTTON
+========================================================= */
+
+.primary-btn {
+  background: #7b3fc6;
+
+  color: #ffffff;
+
+  border: 1px solid #7b3fc6;
+
+  box-shadow: 0 6px 16px rgba(123, 63, 198, 0.18);
+}
+
+.primary-btn:hover {
+  background: #563083;
+
+  border-color: #563083;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   GENERAL SECONDARY BUTTON
+========================================================= */
+
+.secondary-btn {
+  background: #ffffff;
+
+  color: #7b3fc6;
+
+  border: 1px solid #cda7f4;
+}
+
+.secondary-btn:hover {
+  background: #eee6ff;
+
+  border-color: #7b3fc6;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero {
+  min-height: 620px;
+
+  padding: 90px 9%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 70px;
+
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(205, 167, 244, 0.20),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 10% 85%,
+      rgba(123, 63, 198, 0.16),
+      transparent 28%
+    ),
+    linear-gradient(
+      135deg,
+      #21152f,
+      #38204e,
+      #563083
+    );
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.hero-content {
+  max-width: 680px;
+}
+
+.hero-tag,
+.section-tag {
+  display: inline-block;
+
+  color: #cda7f4;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 17px;
+}
+
+.hero h1 {
+  font-size: clamp(44px, 5.5vw, 72px);
+
+  line-height: 1.04;
+
+  letter-spacing: -1.8px;
+
+  color: #ffffff;
+
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  color: #cda7f4;
+}
+
+.hero-text {
+  max-width: 620px;
+
+  color: #ddd5e5;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  margin-bottom: 31px;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.hero-buttons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   HERO INFORMATION CARD
+========================================================= */
+
+.hero-card {
+  width: 355px;
+
+  padding: 38px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2d7ed;
+
+  border-radius: 25px;
+
+  box-shadow:
+    0 22px 60px rgba(0, 0, 0, 0.18),
+    0 5px 15px rgba(33, 21, 47, 0.08);
+
+  flex-shrink: 0;
+}
+
+.card-icon {
+  width: 66px;
+  height: 66px;
+
+  display: grid;
+
+  place-items: center;
+
+  background: #eee6ff;
+
+  border: 1px solid #dfcef1;
+
+  border-radius: 18px;
+
+  font-size: 30px;
+
+  margin-bottom: 20px;
+}
+
+.hero-card h3 {
+  font-size: 24px;
+
+  color: #21152f;
+
+  margin-bottom: 12px;
+}
+
+.hero-card p {
+  color: #756b80;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   MINI STATS
+========================================================= */
+
+.mini-stats {
+  display: flex;
+
+  gap: 35px;
+
+  margin-top: 30px;
+
+  padding-top: 22px;
+
+  border-top: 1px solid #eee8f4;
+}
+
+.mini-stats strong,
+.mini-stats span {
+  display: block;
+}
+
+.mini-stats strong {
+  color: #7b3fc6;
+
+  font-size: 23px;
+}
+
+.mini-stats span {
+  color: #777080;
+
+  font-size: 12px;
+
+  margin-top: 5px;
+}
+
+
+/* =========================================================
+   INTRODUCTION SECTION
+========================================================= */
+
+.intro-section {
+  padding: 95px 10%;
+
+  text-align: center;
+
+  background: #ffffff;
+}
+
+.intro-section h2,
+.features h2,
+.career-section h2 {
+  font-size: 39px;
+
+  line-height: 1.2;
+
+  color: #21152f;
+
+  margin-bottom: 20px;
+}
+
+.intro-section h2 span {
+  color: #7b3fc6;
+}
+
+.intro-section > p:last-child {
+  max-width: 770px;
+
+  margin: 0 auto;
+
+  color: #756b80;
+
+  font-size: 16px;
+
+  line-height: 1.85;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.features {
+  padding: 95px 8%;
+
+  text-align: center;
+
+  background: #f7f5ff;
+}
+
+.feature-grid {
+  margin-top: 48px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 22px;
+}
+
+.feature-card {
+  position: relative;
+
+  text-align: left;
+
+  background: #ffffff;
+
+  padding: 31px;
+
+  border: 1px solid #e8e0ef;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 8px 25px rgba(33, 21, 47, 0.05);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #cda7f4;
+
+  box-shadow:
+    0 18px 40px rgba(33, 21, 47, 0.10);
+}
+
+.feature-icon {
+  width: 58px;
+  height: 58px;
+
+  display: grid;
+
+  place-items: center;
+
+  background: #eee6ff;
+
+  border: 1px solid #e5d5f4;
+
+  border-radius: 16px;
+
+  font-size: 28px;
+
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  color: #2b203c;
+
+  font-size: 18px;
+
+  margin-bottom: 11px;
+}
+
+.feature-card p {
+  color: #71697c;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   CAREER SECTION
+========================================================= */
+
+.career-section {
+  padding: 95px 8%;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(123, 63, 198, 0.18),
+      transparent 28%
+    ),
+    linear-gradient(
+      135deg,
+      #21152f,
+      #38204e
+    );
+
+  text-align: center;
+}
+
+.career-section h2 {
+  color: #ffffff;
+}
+
+.career-grid {
+  margin-top: 48px;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 23px;
+}
+
+.career-card {
+  text-align: left;
+
+  background: rgba(56, 32, 78, 0.96);
+
+  border: 1px solid #563083;
+
+  padding: 33px;
+
+  border-radius: 21px;
+
+  color: #ffffff;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.career-card:hover {
+  transform: translateY(-7px);
+
+  border-color: #cda7f4;
+
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
+.career-card > span {
+  color: #cda7f4;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.5px;
+}
+
+.career-card h3 {
+  font-size: 25px;
+
+  margin: 16px 0 12px;
+}
+
+.career-card p {
+  color: #ddd5e5;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   CAREER BUTTON
+========================================================= */
+
+.career-explore-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 25px;
+
+  padding: 10px 16px;
+
+  border-radius: 10px;
+
+  background: transparent;
+
+  border: 1px solid #cda7f4;
+
+  color: #cda7f4;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.career-explore-button:hover {
+  background: #7b3fc6;
+
+  border-color: #7b3fc6;
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   SCHOLARSHIP SECTION
+========================================================= */
+
+.scholarship-section {
+  padding: 100px 10%;
+
+  display: grid;
+
+  grid-template-columns: 1.4fr 0.8fr;
+
+  align-items: center;
+
+  gap: 75px;
+
+  background: #f7f5ff;
+}
+
+.scholarship-section h2 {
+  font-size: 43px;
+
+  line-height: 1.18;
+
+  color: #21152f;
+
+  margin-bottom: 21px;
+}
+
+.scholarship-section h2 span {
+  color: #7b3fc6;
+}
+
+.scholarship-section p {
+  color: #756b80;
+
+  line-height: 1.8;
+
+  margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   SCHOLARSHIP CARD
+========================================================= */
+
+.scholarship-box {
+  background: #ffffff;
+
+  padding: 42px;
+
+  border: 1px solid #e2d7ed;
+
+  border-radius: 26px;
+
+  box-shadow:
+    0 18px 45px rgba(33, 21, 47, 0.09);
+}
+
+.scholarship-box > div {
+  width: 64px;
+  height: 64px;
+
+  display: grid;
+
+  place-items: center;
+
+  background: #eee6ff;
+
+  border-radius: 17px;
+
+  font-size: 34px;
+
+  margin-bottom: 18px;
+}
+
+.scholarship-box h3 {
+  font-size: 23px;
+
+  color: #2c203c;
+
+  margin-bottom: 10px;
+}
+
+.scholarship-box p {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+  background: #21152f;
+
+  color: #ffffff;
+
+  padding: 48px 9%;
+
+  text-align: center;
+}
+
+footer h3 {
+  color: #cda7f4;
+
+  font-size: 20px;
+
+  margin-bottom: 12px;
+}
+
+footer p {
+  color: #aaa0b4;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  margin: 7px 0;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .home-header {
+    grid-template-columns: 200px 1fr 200px;
+
+    padding: 0 4%;
+
+    gap: 15px;
+  }
+
+  .home-logo img {
+    width: 170px;
+    height: 58px;
+  }
+
+  .home-nav {
+    gap: 24px;
+  }
+
+  .hero {
+    padding: 80px 6%;
+
+    gap: 45px;
+  }
+
+  .hero-card {
+    width: 320px;
+
+    padding: 32px;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .career-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .scholarship-section {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE HEADER
+========================================================= */
+
+@media (max-width: 760px) {
+
+  .home-header {
+    width: 100%;
+    height: 70px;
+
+    padding: 0 18px;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+    align-items: center;
+
+    gap: 12px;
+
+    background: #21152f;
+
+    border-bottom: 1px solid #38204e;
+  }
+
+  .home-nav {
+    display: none;
+  }
+
+  .home-logo {
+    justify-content: flex-start;
+  }
+
+  .home-logo img {
+    width: 155px;
+    height: 52px;
+
+    object-fit: contain;
+  }
+
+  .nav-buttons {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 8px;
+  }
+
+  .login-btn {
+    display: none;
+  }
+
+  .register-btn {
+    min-height: 36px;
+
+    padding: 0 13px;
+
+    font-size: 11px;
+
+    border-radius: 9px;
+
+    box-shadow: none;
+  }
+
+
+  /* HERO */
+
+  .hero {
+    min-height: auto;
+
+    padding: 65px 25px;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 40px;
+  }
+
+  .hero h1 {
+    font-size: 43px;
+
+    letter-spacing: -1px;
+  }
+
+  .hero-text {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    align-items: stretch;
+
+    flex-direction: column;
+  }
+
+  .hero-buttons .primary-btn,
+  .hero-buttons .secondary-btn {
+    width: 100%;
+  }
+
+  .hero-card {
+    width: 100%;
+
+    padding: 30px;
+  }
+
+
+  /* SECTIONS */
+
+  .intro-section,
+  .features,
+  .career-section,
+  .scholarship-section {
+    padding: 70px 25px;
+  }
+
+  .intro-section h2,
+  .features h2,
+  .career-section h2,
+  .scholarship-section h2 {
+    font-size: 31px;
+  }
+
+
+  /* GRIDS */
+
+  .feature-grid,
+  .career-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* SCHOLARSHIP */
+
+  .scholarship-section {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .scholarship-box {
+    padding: 30px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .home-header {
+    height: 66px;
+
+    padding: 0 14px;
+  }
+
+  .home-logo img {
+    width: 140px;
+
+    height: 48px;
+  }
+
+  .register-btn {
+    min-height: 34px;
+
+    padding: 0 11px;
+
+    font-size: 10px;
+  }
+
+  .hero {
+    padding: 55px 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero-card {
+    padding: 25px;
+  }
+
+  .intro-section,
+  .features,
+  .career-section,
+  .scholarship-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
+.website-logo {
+  width: 180px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}

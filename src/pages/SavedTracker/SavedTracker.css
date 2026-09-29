@@ -1,0 +1,842 @@
+.saved-tracker-page {
+  min-height: 100vh;
+  background: #f7f5ff;
+  color: #241936;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.saved-tracker-header {
+  background: #21152f;
+  color: white;
+  padding: 18px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.saved-tracker-logo {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.saved-tracker-back {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 9px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 9px;
+  transition: 0.2s ease;
+}
+
+.saved-tracker-back:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.saved-tracker-hero {
+  background: linear-gradient(
+    135deg,
+    #38204e,
+    #7b3fc6
+  );
+  color: white;
+  padding: 65px 7%;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.saved-tracker-hero-icon {
+  width: 82px;
+  height: 82px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  flex-shrink: 0;
+}
+
+.saved-tracker-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+  color: #e4d0ff;
+}
+
+.saved-tracker-hero h1 {
+  margin: 0 0 12px;
+  font-size: 42px;
+  line-height: 1.15;
+}
+
+.saved-tracker-hero p {
+  margin: 0;
+  max-width: 760px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #f0e9fa;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.saved-tracker-container {
+  width: min(1120px, 88%);
+  margin: 0 auto;
+  padding: 55px 0 80px;
+}
+
+/* =========================
+   OVERVIEW
+========================= */
+
+.tracker-overview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.tracker-stat-card {
+  background: white;
+  border: 1px solid #e8e0f2;
+  border-radius: 18px;
+  padding: 23px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 8px 25px rgba(50, 25, 75, 0.05);
+}
+
+.tracker-stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 13px;
+  background: #eee6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  flex-shrink: 0;
+}
+
+.tracker-stat-card span {
+  display: block;
+  color: #7a7085;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  margin-bottom: 4px;
+}
+
+.tracker-stat-card strong {
+  font-size: 25px;
+  color: #241936;
+}
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.saved-career-section,
+.saved-items-section,
+.deadline-section {
+  margin-bottom: 60px;
+}
+
+.saved-section-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.saved-section-heading-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 13px;
+  background: #eee6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  flex-shrink: 0;
+}
+
+.saved-section-heading span {
+  display: block;
+  color: #7b3fc6;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.4px;
+  margin-bottom: 4px;
+}
+
+.saved-section-heading h2 {
+  margin: 0 0 5px;
+  color: #241936;
+  font-size: 27px;
+}
+
+.saved-section-heading p {
+  margin: 0;
+  color: #71687d;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* =========================
+   SAVED CAREER
+========================= */
+
+.saved-career-card {
+  background: white;
+  border: 1px solid #e4d9ee;
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(50, 25, 75, 0.06);
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+}
+
+.saved-career-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+}
+
+.saved-career-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 15px;
+  background: #eee6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 27px;
+  flex-shrink: 0;
+}
+
+.saved-career-main > div > span {
+  display: block;
+  color: #7b3fc6;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  margin-bottom: 5px;
+}
+
+.saved-career-main h3 {
+  margin: 0 0 7px;
+  color: #241936;
+  font-size: 21px;
+}
+
+.saved-career-main p {
+  margin: 0;
+  color: #71687d;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 650px;
+}
+
+.saved-career-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.tracker-empty-card {
+  background: white;
+  border: 1px dashed #d6c6e6;
+  border-radius: 20px;
+  padding: 40px 25px;
+  text-align: center;
+}
+
+.tracker-empty-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  background: #eee6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 27px;
+  margin: 0 auto 17px;
+}
+
+.tracker-empty-card h3 {
+  margin: 0 0 8px;
+  color: #241936;
+  font-size: 19px;
+}
+
+.tracker-empty-card p {
+  margin: 0 auto 20px;
+  max-width: 620px;
+  color: #71687d;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.saved-primary-button,
+.saved-secondary-button,
+.saved-remove-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.saved-primary-button {
+  background: #7b3fc6;
+  color: white;
+  border: 1px solid #7b3fc6;
+}
+
+.saved-primary-button:hover {
+  background: #5c2d95;
+  border-color: #5c2d95;
+  transform: translateY(-1px);
+}
+
+.saved-secondary-button {
+  background: white;
+  color: #7b3fc6;
+  border: 1px solid #cda7f4;
+}
+
+.saved-secondary-button:hover {
+  background: #f4edff;
+}
+
+.saved-remove-button {
+  background: white;
+  color: #8a5062;
+  border: 1px solid #e1c6d1;
+}
+
+.saved-remove-button:hover {
+  background: #fff4f7;
+}
+
+/* =========================
+   SAVED ITEMS
+========================= */
+
+.saved-items-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.saved-item-card {
+  background: white;
+  border: 1px solid #e8e0f2;
+  border-radius: 19px;
+  padding: 24px;
+  box-shadow: 0 8px 25px rgba(50, 25, 75, 0.05);
+  transition: 0.25s ease;
+}
+
+.saved-item-card:hover {
+  transform: translateY(-3px);
+  border-color: #cda7f4;
+}
+
+.saved-item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.saved-item-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 13px;
+  background: #eee6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+}
+
+.saved-delete-button {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #e6dce9;
+  background: white;
+  color: #7c7184;
+  border-radius: 9px;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 1;
+  transition: 0.2s ease;
+}
+
+.saved-delete-button:hover {
+  background: #f7f1fb;
+  color: #5a4b62;
+}
+
+.saved-item-type {
+  display: inline-block;
+  padding: 5px 9px;
+  background: #f0e6ff;
+  color: #7040a5;
+  border-radius: 7px;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.6px;
+  margin-bottom: 10px;
+}
+
+.saved-item-card h3 {
+  margin: 0 0 17px;
+  color: #241936;
+  font-size: 19px;
+  line-height: 1.35;
+}
+
+.saved-item-deadline {
+  padding-top: 14px;
+  border-top: 1px solid #eee8f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.saved-item-deadline span {
+  color: #7b7183;
+  font-size: 12px;
+}
+
+.saved-item-deadline strong {
+  color: #241936;
+  font-size: 13px;
+}
+
+/* =========================
+   DEADLINE FILTERS
+========================= */
+
+.deadline-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 22px;
+}
+
+.deadline-filter {
+  border: 1px solid #dfd4e9;
+  background: white;
+  color: #655b70;
+  border-radius: 9px;
+  padding: 9px 14px;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.deadline-filter:hover {
+  border-color: #c9b0df;
+  color: #7b3fc6;
+}
+
+.deadline-filter.active {
+  background: #7b3fc6;
+  border-color: #7b3fc6;
+  color: white;
+}
+
+/* =========================
+   DEADLINE LIST
+========================= */
+
+.deadline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.deadline-card {
+  background: white;
+  border: 1px solid #e8e0f2;
+  border-radius: 17px;
+  padding: 19px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 6px 20px rgba(50, 25, 75, 0.04);
+}
+
+.deadline-icon {
+  width: 49px;
+  height: 49px;
+  border-radius: 13px;
+  background: #eee6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  flex-shrink: 0;
+}
+
+.deadline-main {
+  min-width: 0;
+  flex: 1;
+}
+
+.deadline-type {
+  display: inline-block;
+  color: #7b3fc6;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.deadline-main h3 {
+  margin: 0 0 5px;
+  font-size: 16px;
+  color: #241936;
+  line-height: 1.35;
+}
+
+.deadline-main p {
+  margin: 0;
+  color: #776d80;
+  font-size: 12px;
+}
+
+.deadline-right {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.deadline-days {
+  padding: 7px 10px;
+  border-radius: 8px;
+  background: #f1eafa;
+  color: #70459b;
+  font-size: 11px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.deadline-days.urgent {
+  background: #fff0e6;
+  color: #a55c31;
+}
+
+.deadline-save {
+  border: 1px solid #cda7f4;
+  background: white;
+  color: #7b3fc6;
+  border-radius: 9px;
+  padding: 8px 12px;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.2s ease;
+}
+
+.deadline-save:hover {
+  background: #f5efff;
+}
+
+.deadline-save.saved {
+  background: #7b3fc6;
+  color: white;
+  border-color: #7b3fc6;
+}
+
+.tracker-demo-note {
+  margin: 17px 0 0;
+  color: #887e90;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* =========================
+   NEXT SECTION
+========================= */
+
+.tracker-next-section {
+  background: linear-gradient(
+    135deg,
+    #f0e5ff,
+    #ffffff
+  );
+  border: 1px solid #dfd0f2;
+  border-radius: 24px;
+  padding: 38px;
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.tracker-next-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  background: #7b3fc6;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 27px;
+  flex-shrink: 0;
+}
+
+.tracker-next-section > div:last-child > span {
+  color: #7b3fc6;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.tracker-next-section h2 {
+  margin: 8px 0 10px;
+  font-size: 25px;
+  color: #241936;
+}
+
+.tracker-next-section p {
+  margin: 0;
+  max-width: 720px;
+  color: #6d6478;
+  line-height: 1.7;
+}
+
+.tracker-next-actions {
+  display: flex;
+  gap: 13px;
+  margin-top: 22px;
+  flex-wrap: wrap;
+}
+
+.tracker-primary-button,
+.tracker-secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 17px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+  transition: 0.2s ease;
+}
+
+.tracker-primary-button {
+  background: #7b3fc6;
+  color: white;
+}
+
+.tracker-primary-button:hover {
+  background: #5c2d95;
+  transform: translateY(-1px);
+}
+
+.tracker-secondary-button {
+  background: white;
+  color: #7b3fc6;
+  border: 1px solid #cda7f4;
+}
+
+.tracker-secondary-button:hover {
+  background: #f5efff;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.saved-tracker-footer {
+  background: #21152f;
+  color: #d9cee5;
+  padding: 28px 7%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 13px;
+}
+
+.saved-tracker-footer p {
+  margin: 0;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .saved-tracker-hero {
+    padding: 50px 6%;
+  }
+
+  .saved-tracker-hero h1 {
+    font-size: 34px;
+  }
+
+  .tracker-overview {
+    grid-template-columns: 1fr;
+  }
+
+  .saved-items-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .saved-career-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .deadline-card {
+    align-items: flex-start;
+  }
+
+  .deadline-right {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .saved-tracker-header {
+    padding: 16px 5%;
+  }
+
+  .saved-tracker-logo {
+    font-size: 16px;
+  }
+
+  .saved-tracker-back {
+    font-size: 12px;
+    padding: 8px 11px;
+  }
+
+  .saved-tracker-hero {
+    padding: 40px 5%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .saved-tracker-hero-icon {
+    width: 65px;
+    height: 65px;
+    font-size: 30px;
+  }
+
+  .saved-tracker-hero h1 {
+    font-size: 29px;
+  }
+
+  .saved-tracker-hero p {
+    font-size: 14px;
+  }
+
+  .saved-tracker-container {
+    width: 90%;
+    padding: 45px 0 60px;
+  }
+
+  .saved-section-heading h2 {
+    font-size: 23px;
+  }
+
+  .saved-career-card {
+    padding: 22px;
+  }
+
+  .saved-career-main {
+    flex-direction: column;
+  }
+
+  .saved-career-actions {
+    width: 100%;
+  }
+
+  .saved-career-actions a,
+  .saved-career-actions button {
+    width: 100%;
+  }
+
+  .deadline-card {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .deadline-right {
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .deadline-days,
+  .deadline-save {
+    text-align: center;
+    width: 100%;
+  }
+
+  .tracker-next-section {
+    padding: 27px;
+    flex-direction: column;
+  }
+
+  .tracker-next-section h2 {
+    font-size: 22px;
+  }
+
+  .tracker-primary-button,
+  .tracker-secondary-button {
+    width: 100%;
+  }
+
+  .saved-tracker-footer {
+    padding: 25px 5%;
+    flex-direction: column;
+  }
+
+}
